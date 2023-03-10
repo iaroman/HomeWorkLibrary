@@ -5,9 +5,12 @@ public class Main {
         Author authorLourensFridman = new Author("Лоуренс", "Фридмэн");
         Book bookWindows = new Book("Самоучитель Microsoft Windows 10", "2016", authorDenisKolisnichenko);
         Book bookBash = new Book("Bash и кибербезопастность", "2019", authorPolTronkon);
+        Book bookBashCopy = new Book("Bash и кибербезопастность", "2019", authorPolTronkon);
         Book bookLaws = new Book("Введение в американское право", "1992", authorLourensFridman);
         System.out.println(bookWindows.getYear());
         bookWindows.setYear("2023");
         System.out.println(bookWindows.getYear());
+        System.out.println(bookBash.hashCode() == bookBashCopy.hashCode());
+        System.out.println(bookBash.equals(bookBashCopy));
     }
 }
