@@ -24,9 +24,7 @@ public class Author {
     @Override
     public boolean equals(Object obj) {
         Author author = (Author) obj;
-        if (name != author.name) return false;
-        if (soname != author.soname) return false;
-        return true;
+        return (soname == author.soname) && (name == author.name);
     }
 
     @Override

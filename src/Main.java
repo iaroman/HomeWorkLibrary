@@ -10,6 +10,7 @@ public class Main {
         System.out.println(bookWindows.getYear());
         bookWindows.setYear("2023");
         System.out.println(bookWindows.getYear());
+        System.out.println(authorLourensFridman.equals(authorDenisKolisnichenko));
         System.out.println(bookBash.hashCode() == bookBashCopy.hashCode());
         System.out.println(bookBash.equals(bookBashCopy));
     }
